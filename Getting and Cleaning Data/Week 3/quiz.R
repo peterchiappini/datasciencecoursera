@@ -42,6 +42,8 @@ merged$quantileGDP <- cut(merged[, Rank], breaks = breaks)
 
 lowerMidIncome <- merged[`Income Group` == "Lower middle income"]
 
-newTable <- merged[, .N, by=c("Income Group", "quantileGDP")]
+newTable <- lowerMidIncome[, .N, by=c("Income Group", "quantileGDP")]
+
+print(newTable)
 
 
