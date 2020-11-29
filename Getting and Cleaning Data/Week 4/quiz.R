@@ -21,7 +21,7 @@ gdp <- fread("GDP.csv", skip=4, nrows = 191, select = c(1, 2, 4, 5),
 edstats <- fread("EDSTATS_Country.csv")
 
 merged <- merge(gdp, edstats, by="CountryCode")
-print(length(grep("June", merged$`Special Notes`)))
+print(length(grep("Fiscal year end: June", merged$`Special Notes`)))
 
 # Problem 5
 amzn = getSymbols("AMZN",auto.assign=FALSE)
