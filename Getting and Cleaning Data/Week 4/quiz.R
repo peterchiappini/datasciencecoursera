@@ -32,4 +32,4 @@ print(length(amzn2012))
 
 amzn2012Formated <- format(amzn2012, "%a %d")
 amzn2012Monday <- amzn2012Formated[grep("Mon", amzn2012Formated)]
-print(length(amzn2012Monday))
+print(length(amzn2012Monday)) 
